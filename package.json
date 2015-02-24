@@ -1,0 +1,17 @@
+{
+  "name": "links-api",
+  "version": "1.0.0",
+  "description": "Simple links API for FFD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "git@github.com:ffd/links-api.git",
+  "author": "rayfranco",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.11.2",
+    "metafetch": "^1.0.6",
+    "sqlite3": "^3.0.5"
+  }
+}
