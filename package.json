@@ -4,7 +4,8 @@
   "description": "Simple links API for FFD",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": "git@github.com:ffd/links-api.git",
   "author": "rayfranco",
@@ -13,5 +14,8 @@
     "express": "^4.11.2",
     "metafetch": "^1.0.6",
     "sqlite3": "^3.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.3.7"
   }
 }
