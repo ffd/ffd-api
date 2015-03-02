@@ -35,6 +35,7 @@ Links.prototype.add = function(params, cb) {
 	// Ready to insert
 	db.serialize(function() {
 		var statement = db.prepare("INSERT INTO Links(url, title, description, author, votes, date) VALUES (?, ?, ?, ?, ?, ?)");
+
 		statement.run(
 			[
 				params.url,
@@ -42,7 +43,7 @@ Links.prototype.add = function(params, cb) {
 				params.description,
 				params.author,
 				JSON.stringify(params.votes || []),
-				params.date.toISOString()
+				new Date(params.date).toISOString()
 			],
 			function(err) {
 				if (err) {
